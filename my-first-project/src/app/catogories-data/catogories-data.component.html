@@ -1,0 +1,31 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let category of categories;
+        trackBy: trackUser;
+        even as e;
+        odd as o;
+        first as firstRow;
+        last as endRow
+      "
+      [ngClass]="{ even: e, odd: o, first: firstRow, last: endRow }"
+    >
+      <td>{{ category.id }}</td>
+      <td>{{ category.categoryName }}</td>
+      <td><input type="text" /></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <button class="btn btn-danger mt-3" (click)="onAddCategory()">
+    Add Category
+  </button>
+</div>

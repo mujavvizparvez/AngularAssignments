@@ -1,0 +1,9 @@
+.reg-form{
+    width: 40%;
+    border: 1px solid black;
+    padding: 16px;
+    margin-top: 3em;
+}
+.btn-info{
+    width: 100%;
+}

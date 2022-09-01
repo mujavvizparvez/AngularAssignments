@@ -1,0 +1,17 @@
+<div class="container">
+  <h5>Add Details</h5>
+  <form [formGroup]="userForm" (ngSubmit)="onAddDetails()">
+    <div>
+      <label>Title</label>
+      <input type="text" class="form-control" formControlName="title" />
+    </div>
+    <div class="my-3">
+      <label>Description</label>
+      <textarea class="form-control" formControlName="description"></textarea>
+    </div>
+    <div class="my-3">
+      <button class="btn btn-primary">Add Details</button>
+    </div>
+  </form>
+</div>
+<app-user-details></app-user-details>

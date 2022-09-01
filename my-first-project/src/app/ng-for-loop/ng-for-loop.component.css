@@ -1,0 +1,19 @@
+table {
+  width: 70%;
+}
+th {
+  background-color: rgb(137, 75, 194);
+}
+.even {
+  background-color: rgb(234, 255, 127);
+}
+.odd {
+  background-color: rgb(107, 152, 63);
+}
+.first {
+  background-color: cadetblue;
+  color: blue;
+}
+.last {
+  background-color: cornflowerblue;
+}

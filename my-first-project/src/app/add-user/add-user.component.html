@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <label>Add User</label>
+  <input
+    type="text"
+    [attr.value]="userName"
+    class="form-control"
+    (input)="onUserNameUpdate($event)"
+  />
+
+  <div>{{ userName }}</div>
+  <img [src]="imageUrl" />
+</div>

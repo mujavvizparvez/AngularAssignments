@@ -1,0 +1,13 @@
+<p>categories works!</p>
+<a
+  [routerLink]="['/aboutus']"
+  [queryParams]="{ q: 1234, hai: 'shaikh', search: 'hello' }"
+  [fragment]="'laoding'"
+  >Go To about us</a
+>
+
+<a [routerLink]="['/user', 1, 'shaikh']">Go to Shaikh Page</a>
+
+<div *ngFor="let category of categories">
+  {{ category.name }}
+</div>

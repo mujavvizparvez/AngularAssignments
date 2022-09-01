@@ -1,0 +1,26 @@
+<div class="container">
+  <h3>Edit Post</h3>
+  <form [formGroup]="postForm"  (ngSubmit)="onUpdatePost()">
+    <div class="my-3">
+      <label>Title</label>
+      <input type="text" class="form-control" formControlName="title" />
+    </div>
+    <div class="my-3">
+      <select class="form-select" formControlName="categoryId">
+        <option
+          *ngFor="let category of categories"
+          value="{{ category.id }}"
+        >
+          {{ category.title }}
+        </option>
+      </select>
+    </div>
+    <div class="my-3">
+      <label>Body</label>
+      <input type="text" class="form-control" formControlName="body" />
+    </div>
+    <div class="my-3">
+      <button class="btn btn-success">Update</button>
+    </div>
+  </form>
+</div>

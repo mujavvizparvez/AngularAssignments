@@ -1,0 +1,14 @@
+
+.card-wrapper-section h2 {
+  box-sizing: border-box;
+  text-align: center;
+}
+.card-wrapper {
+  display: flex;
+}
+
+.card {
+  width: 25%;
+  margin: 5px;
+}
+

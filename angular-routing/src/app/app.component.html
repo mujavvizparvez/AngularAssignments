@@ -1,0 +1,17 @@
+<div class="container">
+  <div>
+    <button class="btn btn-primary my-2 mx-2" (click)="onLogin()">Login</button>
+    <button class="btn btn-warning" (click)="onLogout()">Logout</button>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <app-navigation></app-navigation>
+    </div>
+    <div class="col-md-9">
+      <!-- <app-categories></app-categories>
+      <app-home></app-home>
+      <app-about-us></app-about-us> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

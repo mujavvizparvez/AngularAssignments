@@ -1,0 +1,41 @@
+<!-- <h3>Todo Details</h3>
+<div class="container">
+  <ul *ngFor="let user of users">
+    <li>{{user.title}} <button>Edit</button></li>
+   
+  </ul>
+</div> -->
+<div>
+  <h2 class="text-center my-3">To-do Table</h2>
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="thead">
+      <tr class="text-center">
+        <!-- <th>Id</th> -->
+        <th>Title</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users" class="text-center">
+        <!-- <td>{{ user.id }}</td> -->
+        <td>{{ user.title }}</td>
+        <td>{{ user.description }}</td>
+        <td>
+          <a
+            [routerLink]="['/user', user.id, 'edit']"
+            class="btn btn-sm btn-warning"
+            >Edit</a
+          >
+          <button
+            class="btn btn-sm btn-danger mx-2"
+            (click)="onDeleteUser(user.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

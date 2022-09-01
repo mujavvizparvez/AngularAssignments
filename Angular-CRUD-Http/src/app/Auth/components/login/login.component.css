@@ -1,0 +1,12 @@
+.loginForm{
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 40%;
+    padding: 16px;
+    margin-top: 3em;
+}
+.btn{
+    width: 100%;
+   font-size: 20px;
+    background-color: rgb(60, 188, 195);
+}

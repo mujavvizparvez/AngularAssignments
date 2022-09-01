@@ -1,0 +1,10 @@
+<div class="container text-primary box">
+  <div>Id:{{ category.id }}</div>
+  <div>Title:{{ category.title }}</div>
+  <div>Description:{{ category.description }}</div>
+  <div>
+    <button class="btn btn-primary btn-sm mx-1" (click)="onViewCategory()">View</button>
+    <button class="btn btn-warning btn-sm mx-1" (click)="onEditCategory()">Edit</button>
+    <button class="btn btn-danger btn-sm mx-1" (click)="onDeleteCategory()">Delete</button>
+  </div>
+</div>

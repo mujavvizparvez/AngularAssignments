@@ -1,0 +1,22 @@
+<h2 class="text-center">Add Post</h2>
+<form [formGroup]="postForm" (ngSubmit)="onAddPost()">
+  <div class="my-3">
+    <label>Title</label>
+    <input type="text" class="form-control" formControlName="title" />
+  </div>
+  <div class="my-3">
+    <label>Category</label>
+    <select class="form-select" formControlName="categoryId">
+      <option *ngFor="let category of categories" [value]="category.id">
+        {{ category.title }}
+      </option>
+    </select>
+  </div>
+  <div class="my-3">
+    <label>Body</label>
+    <input type="text" class="form-control" formControlName="body" />
+  </div>
+  <div class="my-3">
+    <button class="btn btn-dark">Add Post</button>
+  </div>
+</form>

@@ -1,0 +1,24 @@
+<!-- <div class="container home-comp">
+  <div class="text-end my-3">
+    <button class="btn btn-primary">Login</button>
+  </div>
+  <div class="container">
+    <h1>Welcome to Qualminds</h1>
+  </div>
+   <app-navigation></app-navigation>
+  <app-user-login></app-user-login> -->
+ 
+  <div class="container home-comp" *ngIf="!showComponent">
+  <div class="text-end my-3">
+    <button class="btn btn-primary" (click)="onLogin()">Login</button>
+  </div>
+  <div class="container">
+    <!-- <h1>Hello User</h1> -->
+    <h1>Welcome to Qualminds</h1>
+  </div>
+ 
+</div>
+<div *ngIf="showComponent">
+  <app-navigation></app-navigation>
+  <router-outlet></router-outlet>
+</div>

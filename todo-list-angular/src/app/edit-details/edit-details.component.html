@@ -1,0 +1,16 @@
+<div class="container">
+  <h5>Edit Details</h5>
+  <form [formGroup]="userForm" (ngSubmit)="onUpdateDetails()">
+    <div>
+      <label>Title</label>
+      <input type="text" class="form-control" formControlName="title" />
+    </div>
+    <div class="my-3">
+      <label>Description</label>
+      <textarea class="form-control" formControlName="description"></textarea>
+    </div>
+    <div class="my-3">
+      <button class="btn btn-primary">Update Details</button>
+    </div>
+  </form>
+</div>

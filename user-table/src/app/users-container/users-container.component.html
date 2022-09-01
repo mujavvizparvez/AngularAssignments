@@ -1,0 +1,29 @@
+<div class="container">
+  <app-add-user (detailsAdded)="onDetailsAdd($event)"></app-add-user>
+</div>
+<div>
+  <div>
+    <h3>Students List</h3>
+
+    <div class="row">
+      <div class="col-md-4">
+        <app-single-user
+          *ngFor="let data of studentsList; trackBy: trackUser"
+          (studentSelected)="onStudentSelect($event)"
+          [stdData]="data"
+          (studentEdited)="onStudentEdit($event)"
+        ></app-single-user>
+      </div>
+      <div class="col-md-4">
+        <app-view-user
+          *ngIf="selectView"
+          [selectedUser]="selectedStudent"
+        ></app-view-user>
+        <app-edit-user
+          *ngIf="selectEdit"
+          [editedStudent]="editedStudent"
+        ></app-edit-user>
+      </div>
+    </div>
+  </div>
+</div>

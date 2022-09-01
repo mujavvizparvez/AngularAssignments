@@ -1,0 +1,32 @@
+<div class="mt-3">
+  <button class="btn btn-info float-end add-btn" (click)="onShowInput()">
+    Add Category
+  </button>
+</div>
+<div *ngIf="showComponent === 'Add Category'">
+  <app-add-category (categoryAdded)="onCategoryAdd($event)"></app-add-category>
+</div>
+<div class="row mt-5">
+  <div class="col-md-12" *ngIf="showComponent === 'Categories Table'">
+    <app-single-category
+      [categories]="categories"
+      (categoryViewed)="onCategoryViewed($event)"
+      (categoryEdited)="onCategoryEdited($event)"
+      (categoryDeleted)="onCategoryDeleted($event)"
+    >
+    </app-single-category>
+  </div>
+  <div>
+    <app-view-category
+      *ngIf="showComponent === 'View Category'"
+      [category]="viewedCategory"
+      (showCategories)="OnShowCategories()"
+    ></app-view-category>
+    <app-edit-category
+      *ngIf="showComponent === 'Edit Category'"
+      [category]="editCategory"
+      (editCategories)="onEditCategory()"
+      (categoryUpdated)="onUpdateCategory($event)"
+    ></app-edit-category>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="container mt-3">
+  <h1>Create Category</h1>
+  <!-- <button [class]="className">Add Category</button> -->
+  <!-- <button
+    class="btn btn-primary mt-4 mx-3"
+    [class.btn-sm]="isButtonSmall"
+    [class.btn-primary]="isButtonSmall"
+  
+  >
+    Add
+  </button> -->
+  <!-- <button (click)="onButtonClick()">Make Button Smaller</button> -->
+  <!-- ng class -->
+  <!-- String reperesentation -->
+  <!-- <button [ngClass]="classNames">Add</button>
+  <button (click)="onButtonClick()">Make Button Smaller</button> -->
+
+  <!-- Array reperesentation -->
+  <!-- <button [ngClass]="['btn', 'btn-warning', 'btn-sm']">Add</button>
+  <button (click)="onButtonClick()">Make Button Smaller</button> -->
+
+  <!-- OBJECT REPERESENTATION -->
+  <!-- <button [ngClass]="{ btn: true, 'btn-primary': true, 'btn-sm': true }">
+    Add object
+  </button>
+  <button (click)="onButtonClick()">Make Button Smaller</button> -->
+
+  <button class="btn" [ngClass]="applyClasses()">Add object</button>
+  <button (click)="onButtonClick()">Make Button Smaller</button>
+</div>
+
+<h2 class="border-top mt-5">ng Style</h2>
+<div
+  class="mt-4"
+  [ngStyle]="{
+    'background-color': boxBackgroundColor,
+    color: boxTextColor,
+    padding: boxPadding,
+    'font-size': boxFontSize
+  }"
+>
+  I want this background color red and text color black.
+</div>
+
+<div class="my-5"></div>

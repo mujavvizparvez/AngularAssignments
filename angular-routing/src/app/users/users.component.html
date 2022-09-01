@@ -1,0 +1,28 @@
+<p>users works!</p>
+<ul>
+  <li>
+    <a
+      [routerLink]="['/users', 1, 'Shaikh']"
+      [queryParams]="{ name: 'shaikh', hai: 'shaikh' }"
+      >Go to Shaikh Page</a
+    >
+  </li>
+  <li>
+    <a
+      [routerLink]="['/users', 2, 'Mujavviz']"
+      [queryParams]="{ name: 'mujavviz', hai: 'mujavviz' }"
+      >Go to Mujavviz Page</a
+    >
+  </li>
+  <li>
+    <a
+      [routerLink]="['/users', 2, 'Parvez']"
+      [queryParams]="{ name: 'parvez', hai: 'parvez' }"
+      >Go to Parvez Page</a
+    >
+  </li>
+</ul>
+
+<div>
+  <router-outlet></router-outlet>
+</div>

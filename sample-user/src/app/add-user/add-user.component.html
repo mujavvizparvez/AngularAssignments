@@ -1,0 +1,19 @@
+<div class="container">
+  <h4>Add user component</h4>
+  <div class="row">
+    <div class="col-md-6">
+      <label>Create User</label>
+      <input type="text" class="form-control" #ref [(ngModel)]="userName" />
+
+      <div>
+        <app-users #user></app-users>
+      </div>
+      <div><button (click)="onAddUser(ref)">Add User</button></div>
+    </div>
+    <!-- <div *ngIf="true">{{ ref.value }}</div>  -->
+  </div>
+  <div>
+    <p appColors>Color should be black and background pink</p>
+    <!-- <appColors>Color should be black and background pink</appColors> -->
+  </div>
+</div>

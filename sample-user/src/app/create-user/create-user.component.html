@@ -1,0 +1,30 @@
+<p>create-user works!</p>
+<ng-content></ng-content>
+<div>
+  <input type="text" #ref [(ngModel)]="userName" />
+  <!-- <p>{{ref.value}}</p> -->
+  <div>Two Way:{{ userName }}</div>
+</div>
+<div>
+  <!-- <button (click)="onAddUser(user)">Add User</button> -->
+  <button (click)="onAddUser()">Add User</button>
+</div>
+<div><app-users #user></app-users></div>
+<ng-content select="[mid]"></ng-content>
+
+<ng-content select="[one]"></ng-content>
+<div>
+  <p appColors>Color should be black and background pink</p>
+  <!-- <appColors>Color should be black and background pink</appColors> -->
+</div>
+<div ngNonBindable>{{ 1 + 1 }}</div>
+
+<!-- Structural Directive -->
+<div *ngIf="isAvailable">This is the demo of structural directive</div>
+<ng-template [ngIf]="isAvailable">
+  <div>This is the demo of structural directive</div>
+</ng-template>
+<div *appAlternateIf="isAvailable">
+  This is the demo of structural directive with alternate if
+</div>
+<button (click)="isAvailable = !isAvailable">Toggle Button</button>

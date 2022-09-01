@@ -1,0 +1,22 @@
+<div class="row my-2">
+  <h5>Add Details</h5>
+  <div class="col-md-6">
+    <label>Id</label>
+    <input type="text" class="form-control" [(ngModel)]="id" />
+  </div>
+  <div class="col-md-6">
+    <label>Name</label>
+    <input type="text" class="form-control" [(ngModel)]="name" />
+  </div>
+  <div class="col-md-6">
+    <label>Age</label>
+    <input type="text" class="form-control" [(ngModel)]="age" />
+  </div>
+  <div class="col-md-6">
+    <label>Location</label>
+    <input type="text" class="form-control" [(ngModel)]="location" />
+  </div>
+  <div>
+    <button class="btn btn-primary my-4" (click)="onAddDetails()">Add Details</button>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+<!--1) ng-template -->
+<!-- <div>This is text</div>
+<ng-template [ngIf]="showContent">
+  <button>Shaikh Mujavviz</button>
+</ng-template>
+<div>This is another text</div> -->
+
+<!-- 2) ngIf -->
+<!-- <div>
+  <button class="btn btn-primary btn-sm" (click)="onCreateUser()">
+    Add User
+  </button>
+  <div *ngIf="isUserCreated">User is created</div>
+  <div *ngIf="!isUserCreated">Click on the button Add User to create</div>
+</div> -->
+<!-- # Multiple if statement easy way -->
+<!-- <div>
+  <button class="btn btn-primary btn-sm" (click)="onCreateUser()">
+    Add User
+  </button>
+  <div *ngIf="isUserCreated">
+    <div>User is created</div>
+    <p>User is created successfully</p>
+  </div>
+  <div *ngIf="!isUserCreated">
+    <div>Click on the button Add User to create</div>
+    <div>User is not created</div>
+  </div>
+</div> -->
+
+<!--  3) ngIf-else -->
+<!-- 
+<div>
+  <button class="btn btn-primary btn-sm" (click)="onCreateUser()">
+    Add User
+  </button>
+  <div *ngIf="isUserCreated; else noUser">User is created</div>
+  <ng-template #noUser>
+    <div>Click on the button Add User to create</div>
+  </ng-template>
+</div> -->
+
+<!-- 4) ngIf-then-else -->
+
+<!-- <div>
+  <button class="btn btn-primary btn-sm" (click)="onCreateUser()">
+    Add User
+  </button>
+  <div *ngIf="isUserCreated; then thenBlock; else elseBlock">
+    User is created
+  </div>
+  <ng-template #thenBlock>
+    <div>User is created</div>
+    <p>This is a paragraph.</p>
+  </ng-template>
+  <ng-template #elseBlock>
+    <div>Click on the button Add User to create</div>
+  </ng-template>
+</div> -->
+
+<!-- 5) ng-container -->
+<!-- <div>
+  <button class="btn btn-primary btn-sm" (click)="onCreateUser()">
+    Add User
+  </button>
+  <ng-container *ngIf="isUserCreated">
+    <div>User is created</div>
+    <p>User is created successfully</p>
+  </ng-container>
+  <ng-container *ngIf="!isUserCreated">
+    <div>Click on the button Add User to create</div>
+    <div>User is not created</div>
+  </ng-container>
+</div> -->
+
+<!-- 6) ngIf under hood with ng-template -->
+
+<div>
+  <button class="btn btn-primary btn-sm" (click)="onCreateUser()">
+    Add User
+  </button>
+  <div *ngIf="isUserCreated; else noUser">User is created</div>
+  <ng-template #noUser>Click on the user</ng-template>
+
+  <ng-template [ngIf]="isUserCreated" [ngIfElse]="elseBlock">
+    <div>User is created</div>
+  </ng-template>
+  <ng-template #elseBlock>
+    <div>user is not created</div>
+  </ng-template>
+</div>

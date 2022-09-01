@@ -1,0 +1,33 @@
+.footer-top {
+  background-color: aliceblue;
+  display: flex;
+}
+.honda-title {
+  flex-basis: 70%;
+}
+.contact-btn {
+  flex-basis: 30%;
+  text-align: right;
+  padding: 10px;
+  margin-top: 5px;
+}
+#btn-ctct {
+  border: none;
+  background-color: rgb(63, 114, 186);
+  color: white;
+  border-radius: 7px;
+  width: 30%;
+  padding: 10px;
+}
+.footer-details {
+  display: flex;
+}
+.footer-list {
+  width: 33%;
+}
+.footer-list h4 {
+  margin-left: 2.5em;
+}
+.footer-list ul {
+  list-style-type: none;
+}

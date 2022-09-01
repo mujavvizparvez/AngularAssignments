@@ -1,0 +1,18 @@
+<!-- <div *ngIf="editedStudent">
+  Selected Students Data
+  <div>Id:{{ editedStudent.id }}</div>
+  <div>Name:{{ editedStudent.name }}</div>
+  <div>Age:{{ editedStudent.age }}</div>
+  <div>Loacation:{{ editedStudent.location }}</div>
+</div> -->
+<div *ngIf="editedStudent" class="editData border-black p-5">
+  <h5>Selected Students Data</h5>
+  <label>Id:</label><br />
+  <input type="text" [(ngModel)]="editedStudent.id"  /><br />
+  <label>Name:</label><br />
+  <input type="text" [(ngModel)]="editedStudent.name" /><br />
+  <label>Age;</label><br />
+  <input type="text" [(ngModel)]="editedStudent.age" /><br />
+  <label>Location:</label><br />
+  <input type="text" [(ngModel)]="editedStudent.location" /><br />
+</div>

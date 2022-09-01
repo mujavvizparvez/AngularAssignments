@@ -1,0 +1,15 @@
+<p>user works!</p>
+
+<div>
+  <div>Id:{{ id }}</div>
+  <div>Name:{{ name }}</div>
+</div>
+
+<!-- <div>
+  <a [routerLink]="['/users', id, name, 'edit']" queryParamsHandling="preserve"
+    >Edit User</a
+  >
+</div> -->
+<div>
+  <button (click)="onEditUser()">Edit User</button>
+</div>

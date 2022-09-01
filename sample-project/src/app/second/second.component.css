@@ -1,0 +1,20 @@
+.banner-section {
+  display: flex;
+}
+.img-banner {
+  flex-basis: 40%;
+}
+.banner-text {
+  flex-basis: 60%;
+  background-color: rgb(238, 221, 238);
+  line-height: 20px;
+  word-spacing: 2px;
+}
+.banner-text h2 {
+  margin-left: 1em;
+  color: blueviolet;
+}
+.banner-text p {
+  margin-left: 1.5em;
+  color: cadetblue;
+}

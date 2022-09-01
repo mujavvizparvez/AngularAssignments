@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h5 class="my-3">Categories Data</h5>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-md-12 text-end">
+    <button class="btn btn-primary" (click)="onAddCategory()">
+      Add Category
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-categories *ngIf="selectedComponent === 'categories'"></app-categories>
+    <app-add-category
+      *ngIf="selectedComponent === 'add category'"
+    ></app-add-category>
+    <app-view-category  *ngIf="selectedComponent === 'view category'"></app-view-category>
+    <app-edit-category *ngIf="selectedComponent === 'edit category'"></app-edit-category>
+  </div>
+</div>
