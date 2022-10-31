@@ -1,0 +1,299 @@
+/* .service-form{
+    height: 80vh;
+    width: 50%;
+    margin: 2em auto;
+} */
+.service-reminder {
+  padding: 3em;
+}
+
+.text-reminder {
+  color: rgba(255, 255, 255, 0.8);
+  padding: auto 2em;
+  background-color: #007ec0;
+  position: relative;
+}
+.text-reminder .fa-arrow-right-long {
+  font-size: 15px;
+}
+.text-reminder .service-reminder {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.text-reminder .service-reminder .imp-remind {
+  font-size: 0.8em;
+}
+.outer-div {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 2.5em;
+}
+.fa-xmark {
+  color: #aeaeae;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  font-size: 12px;
+}
+.vehicle-info {
+  /* height: 70vh; */
+  background-color: white;
+}
+.icn {
+  font-size: 0.6em;
+  padding: 5px 0;
+}
+.icon {
+  margin-right: 8px;
+  padding: 6px;
+  background-color: white;
+  /* color: #38b1da; */
+  color: #2284c2;
+}
+/* .flexRadioDefault1{
+    accent-color: black;
+} */
+/* .dave {
+  font-size: 1.2em;
+  font-weight: 800;
+} */
+.vehicle-info .ask-update {
+  font-size: 0.8em;
+  font-weight: 800;
+}
+.vehicle-info .update-confirmation {
+  font-size: 0.55em;
+  font-weight: 500;
+}
+#specifyColor {
+  accent-color: black;
+  width: 20px;
+  height: 20px;
+}
+.form-check {
+  font-size: 0.6em;
+  color: black;
+}
+.number-form {
+  font-size: 0.6em;
+}
+.number-form span {
+  color: red;
+  font-weight: bold;
+}
+.mob-no {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+input[type="number"]::placeholder {
+  color: black;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* input[type='radio']:checked+label:after{
+ } */
+.buttons {
+  border-top: 1px solid #e2e2e2;
+  margin-top: 2.5em;
+}
+.buttons .btn-submit {
+  border-radius: 30px;
+  width: 80px;
+  font-size: 0.6em;
+  font-weight: bold;
+  background-color: #007ec0;
+}
+.buttons .btn-skip {
+  font-size: 0.6em;
+  color: #cecece;
+}
+@media screen and (max-width: 576px) {
+  .service-form {
+    margin: 1em auto;
+    width: 90%;
+  }
+  .dave {
+    color: black;
+    margin-top: 0.4em;
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  .text-updates {
+    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .text-updates .ask-update {
+    font-size: 1.4em;
+    padding: 0.2em 0;
+    line-height: 1.5em;
+    font-weight: 800;
+    color: black;
+  }
+  .text-updates .update-confirmation {
+    font-size: 14px;
+    line-height: 1.8em;
+    margin: 0 4px;
+    /* opacity: 0.9; */
+  }
+ 
+  .form-check {
+    font-size: 14px;
+    margin: 0.6em 0;
+  }
+  .form-check input{
+    margin-right: 10px;
+  }
+  .text-reminder .service-reminder {
+    margin: 0;
+    position: relative;
+  }
+  .outer-div {
+    padding: 0;
+  }
+  .number-form {
+    padding: 0.1em 1.3em;
+    font-size: 0.9em;
+  }
+  .number-form input {
+    width: 100%;
+  }
+  .buttons {
+    padding: 2.5em;
+    margin-top: 0;
+    border-top: none;
+  }
+  .buttons .btn-submit {
+    width: 130px;
+    font-size: 0.9em;
+    padding: 0.7em 0.4em;
+  }
+  .buttons .btn-skip {
+    float: right;
+    font-size: 1em;
+  }
+  .text-reminder .fa-arrow-right-long {
+    font-size: 1.5em;
+  }
+  .text-reminder .service-reminder .imp-remind {
+    font-size: 1.3em;
+    line-height: 1.7em;
+    padding-bottom: 0.5em;
+  }
+  .icn {
+    font-size: 1em;
+    padding: 0.5em 0;
+  }
+  .icn i{
+    padding: 10px;
+  }
+}
+
+/* @media screen and ( min-width: 800px  ) { */
+  @media only screen and
+   /* (max-width: 1199px) and  */
+   (min-width: 800px){
+  .service-form {
+    height: 50vh;
+    width: 50%;
+    margin: 2em auto;
+  }
+  /* .text-reminder,.outer-div,.vehicle-info{
+    height: 110vh;
+  } */
+  /* .outer-div{
+    height: 110vh;
+  }
+  .vehicle-info{
+    height: 110vh;
+
+  } */
+  .dave {
+  font-size: .7em;
+  font-weight: 800;
+}
+  .number-form input {
+    width: 100px;
+  }
+  .buttons {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service-form {
+    height: 90vh;
+    width: 50%;
+    margin: 3.4em auto;
+  }
+  .text-reminder .service-reminder .imp-remind {
+    font-size: 22px;
+    font-weight: 350;
+    padding: .5em .6em;
+  }
+  .text-reminder .fa-arrow-right-long {
+    font-size: 25px;
+    padding: .2em 1em;
+
+  }
+  .fa-xmark {
+    font-size: 20px;
+  }
+  .icn {
+    font-size: 16px;
+        padding: .5em 1em;
+
+  }
+  .icn i{
+    font-size: 20px;
+    padding: 8px;
+  }
+    /* .outer-div{
+      padding: 5em;
+    } */
+  .dave {
+    font-size: 34px;
+  }
+  .text-updates .ask-update {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+    /* font-weight: bold; */
+  }
+  .text-updates .update-confirmation {
+    font-size: 16px;
+  }
+  .form-check {
+    font-size: 16px;
+    margin: 0.3em 0;
+  }
+  .number-form {
+    padding: 2em;
+  }
+  .number-form input {
+    width: 330px;
+  }
+  .number-form label {
+    font-size: 1.7em;
+  }
+
+  input[type="number"]::placeholder {
+    font-size: 1.7em;
+  }
+  .buttons {
+    text-align: center;
+  }
+  .buttons .btn-submit {
+    width: 130px;
+    font-size: 1em;
+    padding: 0.6em;
+  }
+  .buttons .btn-skip {
+    font-size: 1em;
+  }
+}

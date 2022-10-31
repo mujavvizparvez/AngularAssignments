@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-size: 16px;
+    background-image: url(https://images.pexels.com/photos/2685254/pexels-photo-2685254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    /* background-image: url(./assets/Capture3.PNG); */
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    line-height: .4em;
+}
